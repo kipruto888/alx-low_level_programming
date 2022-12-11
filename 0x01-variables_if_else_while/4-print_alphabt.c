@@ -4,18 +4,18 @@
  *
  * Return: Always 0
 */
-
 int main(void)
 {
-	char c;
+	char ch;
 
-	c = 'a';
-	while (c <= 'z')
+	ch = 'a';
+	while
+		(ch <= 'z')
 {
-	if ((c != 'q' && c != 'e') && c <= 'z')
-		putchar(c);
-	c++;
-}
-	putchar('/n');
+			if ((ch != 'q' && ch != 'e') && ch <= 'z')
+				putchar(ch);
+			ch++;
+		}
+	putchar('\n');
 	return (0);
 }

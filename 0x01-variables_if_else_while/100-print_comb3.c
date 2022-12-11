@@ -1,12 +1,9 @@
 #include <stdio.h>
-
 /**
  * main - prints all possible different combinations of two digits
  *
  * Return: Always 0
- *
 */
-
 int main(void)
 {
 	int ones = '0';
@@ -16,7 +13,7 @@ int main(void)
 	{
 		for (ones = '0'; ones <= '9'; ones++)
 		{
-			for (!((ones == tens) || (tens > ones)));
+			if (!((ones == tens) || (tens > ones)));
 			{
 				putchar(tens);
 				putchar(ones);

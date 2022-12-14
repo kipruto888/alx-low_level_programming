@@ -2,12 +2,12 @@
 
 /**
  * print_last_digit - prints the last digit
- * @w: the number
+ * @n: the number
  * Return: value of the last digit
 */
-int print_last_digit(int w);
+int print_last_digit(int n)
 {
-	int ld = w % 10;
+	int ld = n % 10;
 
 	if (ld < 0)
 		ld *= -1;

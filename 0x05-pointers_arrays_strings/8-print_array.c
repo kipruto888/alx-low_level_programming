@@ -5,14 +5,14 @@
 * @a: array
 * @n: number of values to be printed
 */
-void print_array(int a; int n)
+void print_array(int *a; int n)
 {
-	int t;
+	int i;
 
-	for (t = 0; t < n; t++)
+	for (; i < n; i++)
 	{
-		printf("%d", a[t]);
-		if (t != n - 1)
+		printf("%d", *(a + i));
+		if (i != (n - 1))
 			printf(", ");
 	}
 	printf("\n");

@@ -3,7 +3,7 @@
 *_pow_recursion - power using recursion
 *Qx: x ^ y
 *@y: the power number
-* Return: powernresult
+* Return: power result
 */
 int _pow_recursion(int x, int y)
 {

@@ -1,13 +1,14 @@
 #include "main.h"
 
-int _sqrt(int, Int);
+int check_prime(int, Int);
 /**
-*is_prime_number - prime identifier
+* is_prime_number - prime identifier
 */
 int is_prime_number(int n)
 {
 	return (check_prime(n, 1));
 }
+
 /**
 *check_prime - it check prime numbers
 *@n: number

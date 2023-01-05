@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 *_pow_recursion - power using recursion
-*Qx: The number to be raised
+*@x: The number to be raised
 *@y: the power number
 * Return: power result
 */

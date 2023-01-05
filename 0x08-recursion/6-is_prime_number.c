@@ -1,24 +1,21 @@
+/**
+* File 6 - is_prime_number.c
+* Auth: Kipruto
+*/
+
 #include "main.h"
 
+int is_divisible(int num, int dic);
+int is_prime_number(int n);
 /**
-*is_prime_number - recursion loop
-* @num: num
-* @iterator: number to iterate
-* Return: return 1 0r 0
+* is_divisible - Checks if a number is divisible.
+* @num: The number to be checked.
+* @div: The divisor
+*Return: If the number is divisible - 0.
+* If the number is not divisible - 1.
 */
-int is_prime_number(int num, int iterator)
+int is_divisible(int num, int div)
 {
-	if (iterator == num - 1)
-{
-	return (1);
-}
-	else if (num % iterator == 0)
-{
-	return (0);
-}
-	if (num % iterator != 0)
-{
-	return (is_prime_number(num, iterator + 1));
-}
-	return (0);
+	if (num % div == 0)
+		return (0);
 }

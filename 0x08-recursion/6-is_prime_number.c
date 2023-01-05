@@ -1,6 +1,6 @@
 #include "main.h"
 
-int check_prime(int, Int);
+int _sqrt(int, Int);
 /**
 *is_prime_number - prime identifier
 */

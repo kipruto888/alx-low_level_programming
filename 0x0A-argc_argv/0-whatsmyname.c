@@ -8,10 +8,9 @@
 *@argv: this is the argument vector
 *Return: this return to 0
 */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%a\n", argv[0]);
-	(void)argc;
+	printf("%s\n", *argv);
 
 	return (0);
 }

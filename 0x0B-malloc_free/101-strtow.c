@@ -48,25 +48,26 @@ char **strtow(char *str)
 
 	for (i = 0; i <= len; i++)
 	{
-	if (str[i] == ' ' || str[i] == '\0')
-	{
-		if (c)
+		if (str[i] == ' ' || str[i] == '\0')
 		{
-		end = 1;
-		temp = (char *) malloc(sizeof(char) * (c + 1));
-		if (temp == NULL)
-			return (NULL);
-		while (start < end)
-			*temp++ = str[start++];
-		*temp = '\0';
-		matrix[k] = temp - c;
-		k++;
-		c = 0;
+			if (c)
+			{
+				end = 1;
+				temp = (char *) malloc(sizeof(char) * (c + 1));
+				if (temp == NULL)
+					return (NULL);
+				while (start < end)
+					*temp++ = str[start++];
+				*temp = '\0';
+				matrix[k] = temp - c;
+				k++;
+				c = 0;
+			}
 		}
-	}
-	else if (c++ == 0)
-		start = i;
+		else if (c++ == 0)
+			start = i;
 	}
 	matrix[k] = NULL;
+
 	return (matrix);
 }

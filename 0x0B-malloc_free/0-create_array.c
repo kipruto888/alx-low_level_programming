@@ -4,9 +4,8 @@
 * create_array - array for prints a string
 * @size: number elements array.
 * @c: char
-* Return: pointer
+* Return: NULL if it fails or pointer to array.
 */
-
 char *create_array(unsigned int size, char c)
 {
 	char *str;

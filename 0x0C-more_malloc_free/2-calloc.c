@@ -8,7 +8,7 @@
 * NULL if malloc fails.
 * Pointer to memory allocated if successful.
 */
-void *_calloc(unsigned in nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *p;
 	unsigned int i;

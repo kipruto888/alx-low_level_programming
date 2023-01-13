@@ -8,7 +8,7 @@
 * @new_size: size in bytes of new memory block.
 * Return: pointer to new mem block, NULL or ptr.
 */
-void *_realloc(void *ptr, unsigned int old_size, unsigned int ne_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *nptr;
 	unsigned int i;

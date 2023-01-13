@@ -1,5 +1,6 @@
+#include <stdio.h>
 #include "main.h"
-
+#include <stdlib.h>
 int find_len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
@@ -105,7 +106,7 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
 
 	for (; mult_len >= 0; mult_len--, mult--, prod--)
 	{
-		if (*mult < '0' || *mult > '9'
+		if (*mult < '0' || *mult > '9')
 		}
 			printf("Error\n");
 			exit(98);
@@ -175,7 +176,7 @@ int main(int argc, char *argv[])
 {
 	char *final_prod, *next_prod;
 	int size, index, digit_prod;
-	int size, index, digit, zeroes = 0;
+	int zeroes = 0;
 
 	if (argc != 3)
 	{
@@ -187,17 +188,17 @@ int main(int argc, char *argv[])
 		argv[1] = iterate_zeroes(argv[1]);
 	if (*(argv[2]) == '0')
 		argv[2] = iterate_zeroes(argv[2]);
-	if (*(argv[1]) == '\0' || *(argv[2] == '\0')
+	if (*(argv[1]) == '\0' || *(argv[2]) == '\0')
 	{
 		printf("0\n");
 		exit(98);
 	}
 
-	size = find_len(argv[1] + find_len(argv[2]);
+	size = find_len(argv[1]) + find_len(argv[2]);
 	final_prod = create_xarray(size + 1);
 	next_prod = create_xarray(size + 1);
 
-	for (index = find_len(argv[2] - 1; index >= 0; index--)
+	for (index = find_len(argv[2]) - 1; index >= 0; index--)
 	{
 		digit = get_digit(*(argv[2] + index));
 		get_prod(next_prod, argv[1], digit, zeroes++);

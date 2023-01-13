@@ -15,7 +15,7 @@ int _strlen(char *string)
 	return (i);
 }
 /**
-* string_nconcat s1 n bytes of s2; return ptr string
+* string_nconcat - s1 n bytes of s2; return ptr string
 * @s1: string 1
 * @s2: string 2
 * @n: n bytes to concat from string 2
@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = _strlen(s1) + num + 1;
 
 	ptr = malloc(sizeof(*ptr) * len);
-	if (ptr == NULL);
+	if (ptr == NULL)
 		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)

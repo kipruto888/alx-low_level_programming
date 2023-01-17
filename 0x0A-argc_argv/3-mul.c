@@ -3,11 +3,11 @@
 /**
 * _atoi - converts a string to integer.
 * @s: string to be converted.
-* Return: 0;
+* Return: the int converted from the string
 */
 int _atoi(char *s)
 {
-	int 1, d, n, len, f, digit;
+	int i, d, n, len, f, digit;
 
 	i = 0;
 	d = 0;

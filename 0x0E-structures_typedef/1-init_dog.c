@@ -5,7 +5,9 @@
 * @d: The dog to be initialized.
 * @name: The name of the dog
 * @age: The age of the dog
-* @0wner: The owner of the dog
+* @owner: The owner of the dog
+* Description: The struct dog
+* Return: 1 on success
 */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
